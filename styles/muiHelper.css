@@ -1,0 +1,25 @@
+.MuiModal-root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* styles to apply backgroudn to accordin when expanded */
+ .Mui-expanded .MuiAccordion-region{
+    background-color: #FFBB38 !important;
+    transition: ease-in .2s !important;
+}
+.MuiAccordion-root .Mui-expanded {
+    background-color: #FFBB38 !important;
+    transition: ease-in .2s !important;
+}
+.MuiAccordion-gutters{
+    margin: .75rem 0 !important;
+}
+.MuiAccordion-root::before{
+    display: none !important;
+
+
+
+}

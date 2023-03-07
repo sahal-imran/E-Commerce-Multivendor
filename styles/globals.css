@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+/* ======> HeloSlider Section Css */
+
+.categoryProductClass:hover a::after {
+  height: 60%;
+}
+
+/* ========> End of HeloSlider Section Css */
+/* Search header styling */
+.Add-to-cart:hover .Add-to-cart-item {
+  display: block;
+}
+.item-shadow {
+  box-shadow: rgb(0 0 0 / 14%) 0px 15px 50px 0px;
+}
+.MyDropdown:hover div {
+  display: flex;
+}
+
+/* Animating view more button arrow  */
+.arrow-right-bouncing {
+  animation: bounce 1.3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Product Cart vertical  */
+.product-card-vertical:hover .animated-icon {
+  margin-right: 0px;
+}
+
+.product-card-vertical:hover .animated-button {
+  bottom: 24px;
+}
+
+/* Product Cart vertical  */
+.product-card-horizontal:hover .animated-icon {
+  margin-left: 0px;
+}
+
+.main-wrapper-card span.anim {
+  position: absolute;
+  background-color: #ffbb38;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.main-wrapper-card span.bottom,
+.main-wrapper-card span.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.main-wrapper-card span.left,
+.main-wrapper-card span.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.main-wrapper-card span.top {
+  top: 0;
+}
+
+.main-wrapper-card span.bottom {
+  bottom: 0;
+}
+
+.main-wrapper-card span.left {
+  left: 0;
+}
+
+.main-wrapper-card span.right {
+  right: 0;
+}
+
+.product-card-one:hover ~ span.bottom,
+.product-card-one:hover ~ span.top,
+.product-row-card-style-one:hover ~ span.bottom,
+.product-row-card-style-one:hover ~ span.top {
+  transform: scaleX(1);
+}
+
+.product-card-one:hover ~ span.left,
+.product-card-one:hover ~ span.right,
+.product-row-card-style-one:hover ~ span.left,
+.product-row-card-style-one:hover ~ span.right {
+  transform: scaleY(1);
+}
+
+.main-wrapper-card:hover .animated-button {
+  bottom: 0px;
+}
+
+/* Animating the add to cart button in vertical product card  */
+.animated-button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 0.7s ease;
+  z-index: -1;
+}
+
+.animated-button button:hover::before {
+  width: 100%;
+}
+
+.animated-button button:hover svg {
+  fill: white;
+}
+
+.animated-button button:hover p {
+  color: white;
+}
+.animated-button button:hover {
+  background-color: black;
+}
+
+/* Animating the add to cart button in horizontal product card  */
+.animated-cart-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 0.7s ease;
+  z-index: -1;
+}
+
+.animated-cart-button:hover::before {
+  width: 100%;
+}
+
+.animated-cart-button:hover svg {
+  fill: white;
+}
+
+.animated-cart-button:hover p {
+  color: white;
+}
+.animated-cart-button:hover {
+  background-color: black;
+}
+
+.Full_Menu:hover div {
+  display: flex;
+}
+
+/* // tailwind css line-clamp property  */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  /* Fallback for browsers that do not support line-clamp */
+  @supports not (-webkit-line-clamp: 2) {
+    max-height: 3.6rem; /* Approximate height of two lines of text */
+  }
+}
+
+/* Using black color to give  a gray colored border like effect  */
+.border-qgray-border {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 239 239/var(--tw-border-opacity))
+}
+
+/* Hiding scroll bar for product description page / modal */
+
+/* For webkit-based browsers */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.scrollbar-hidden::-moz-scrollbar {
+  display: none;
+}
+
+/* Forms input placeholders style */
+.formPlaceholder::placeholder{
+  font-size: 13px;
+  color: #B3B3B3;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
